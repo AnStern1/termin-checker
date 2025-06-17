@@ -57,7 +57,7 @@ async def scheduler():
         except Exception as e:
             print(f"⚠️ Ошибка при выполнении: {e}")
         print("⏳ Ожидаем 5 минут до следующей проверки...\n")
-        await asyncio.sleep(50)  # 5 минут
+        await asyncio.sleep(300)  # 5 минут
 
 if __name__ == "__main__":
     asyncio.run(scheduler())
